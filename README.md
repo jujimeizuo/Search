@@ -1,6 +1,6 @@
 # MyIndex
 
-点击[这里](https://Hukeqing.github.io/MyIndex)体验我的主页
+点击[这里](https://jujimeizuo.github.io/MyIndex)体验我的主页
 
 点击[这里](https://github.com/Hukeqing/MyIndex/releases/download/V1.0/MyIndexPack.rar)下载打包的主页
 
