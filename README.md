@@ -2,7 +2,7 @@
 
 点击[这里](https://jujimeizuo.github.io/MyIndex)体验我的主页
 
-点击[这里](https://github.com/Hukeqing/MyIndex/releases/download/V1.0/MyIndexPack.rar)下载打包的主页
+点击[这里](https://github.com/jujimeizuo/MyIndex/archive/master.zip)下载打包的主页
 
 clone此仓库并把index文件作为主页，可以得到自己的个性化主页
 
