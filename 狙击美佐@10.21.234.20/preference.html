@@ -1,0 +1,82 @@
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" type="image/x-ico" href="favicon.ico"/>
+
+    <link rel="stylesheet" href="css/button.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/checkbox.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/preference.css" type="text/css" media="all"/>
+
+    <script type="text/javascript" src="js/cookie.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+    <script type="text/javascript" src="js/fastlinker.js"></script>
+
+    <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <title>偏好设置</title>
+</head>
+
+<body id='body'>
+<script>
+    function save_preference() {
+        if (save_search_preference() && save_fastlinker_preference()) {
+            window.location.href = 'index.html';
+        }
+    }
+</script>
+<div>
+    <h1>偏好设置</h1>
+    <fieldset>
+        <h2>搜索引擎偏好设置：</h2>
+        <div id='search_preference'>
+        </div>
+    </fieldset>
+    <fieldset>
+        <h2>快捷方式偏好设置：</h2>
+        <h4 style="color: red; font-weight: bold">注意：实际使用时会根据您当前的浏览器高度以及您选择的数量进行横向布局</h4>
+        <div id='fastlinker_preference'>
+        </div>
+    </fieldset>
+    <div>
+        <button onclick="save_preference()" style="font-weight: 800; color: gray; font-size: larger;">
+            Save and Back
+        </button>
+        <button onclick="window.location.href = 'index.html';"
+                style="font-weight: 800; color: gray; font-size: larger;">
+            Not Save and Back
+        </button>
+    </div>
+    <div style="height: 90px;">
+    </div>
+</div>
+<div class="footer" id="footer">
+    <p class="centers">
+        Copyright &copy; 2021.jujimeizuo All rights reserved.
+        <br>提供壁纸：以附件的形式发送至<a href="fzt3058852685@qq.com?Subject=我要推荐壁纸" class="no-line">fzt3058852685@qq.com</a> |
+        希望新增快捷链接或者增加搜索方式：联系我<a href="fzt3058852685@qq.com?Subject=Hello%20Mauve"
+                               class="no-line">fzt3058852685@qq.com</a>
+    </p>
+</div>
+<script>
+    search_preference_init();
+    fastlinker_preference_init();
+    $(function () {
+        $(".sort").mouseenter(function () {
+            $(this).addClass("sort_on");
+        }).mouseleave(function () {
+            $(this).removeClass("sort_on");
+        }).mousedown(function () {
+            $(this).addClass("sort_on_drag");
+        }).mouseup(function () {
+            $(this).removeClass("sort_on_drag");
+        })
+        $("#sortable1, #sortable2").sortable({
+            connectWith: ".connectedSortable",
+            placeholder: "placeholder"
+        }).disableSelection();
+    });
+</script>
+</body>
+
+</html>
