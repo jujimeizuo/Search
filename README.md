@@ -1,6 +1,6 @@
 # MyIndex
 
-点击[这里](https://jujimeizuo.github.io/MyIndex)体验我的主页
+点击[这里](http://www.jujimeizuo.cn/Search)体验我的主页
 
 点击[这里](https://github.com/jujimeizuo/MyIndex/archive/master.zip)下载打包的主页
 
